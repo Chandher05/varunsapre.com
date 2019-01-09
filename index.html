@@ -60,49 +60,7 @@
 	  
 	  <script>
 	  
-	  function show_image(src, container) {
-		var img = document.createElement("img");
-		img.src = src;
-
-		// This next line will just add it to the <body> tag
-			container.appendChild(img);
-		
-		}
-		
-		var main = document.getElementById("main");
-		var folder = "images"
-		var tick_tok = 0;
-		
-		var col1 = document.getElementById("col1");
-		var col2 = document.getElementById("col2");
-		var col3 = document.getElementById("col3");
-		
-		
-		var sources = [
-		"3336ffb0-7051-4dce-8400-8636a84a262a.jpg",
-		"3ea33a56-f743-4264-8fe4-6e117a6e0698.jpg",
-		"5568df74-e07c-49e8-b2fe-a49a0bf08105.jpg",
-		"7006adc5-193f-4c85-aedd-9f4e1d6e6148.jpg",
-		"7209904e-8606-4947-8c13-a3c6d8094f31.jpg",
-		"IMG_1613.jpg",
-		"IMG_1683.jpg",
-		"IMG_1742.jpg",
-		"IMG_8346.JPG",		
-		]
-		
-		while(sources.length>0)
-		{
-			i = Math.floor(Math.random() * sources.length);  
-			if(tick_tok == 0)
-				show_image(folder+"/"+sources[i], col1);
-			else if(tick_tok == 1)
-				show_image(folder+"/"+sources[i], col2);
-			else if(tick_tok == 2)
-				show_image(folder+"/"+sources[i], col3);
-			tick_tok = (tick_tok + 1) % 3;
-			sources.splice(i, 1);
-			
-		}
+	 
 
 		
 		
